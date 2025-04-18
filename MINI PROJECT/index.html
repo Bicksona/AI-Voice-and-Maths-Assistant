@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/SHIRU LOGO.png">
+  
+    <title>SHIRU-AI VOICE ASSISTANT</title>
+   
+</head>
+<meta name="theme-color" content="#007991">
+
+
+<body>
+    <img src="/images/Slogo.png" alt="" id="S">
+    <p id="name">HIRU</p>
+    <img src="images/Shiru.webp" alt="" id="logo">
+    <h1 id="typewriter">
+        <span id="im">I'm</span>
+        <span id="name1">SHIRU</span>
+        <span id="phone">AI</span>
+        <span id="you">YOUR AI-ASSISTANT</span>
+        
+    </h1>
+    <img src="images/voice.gif" alt="VOICE" id="voice">
+    <button id="btn"><img src="/images/mic.svg" alt="mic"></button>
+    <button id="btn1"><a href="maths.html"><img src="/images/maths.svg" alt="calc"></a></button>
+    <button id="btn2"><a href="rate.html"><img src="/images/review.svg" alt="PEN"></a></button>
+    <p id="rate">RATE US</p>
+    <p id="version">VERSION 1.8.0</p>
+    <script src="voice.js"></script>
+
+
+  <script>
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        navigator.serviceWorker
+            .register('/service-worker.js') 
+            .then((registration) => {
+                console.log('✅ Service Worker Registered Successfully! Scope:', registration.scope);
+            })
+            .catch((error) => {
+                console.error('❌ Service Worker Registration Failed:', error);
+            });
+    });
+} else {
+    console.warn('⚠ Service Workers are not supported in this browser.');
+}
+
+  </script>
+<script src="typewriter.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var btn = document.getElementById('btn');
+    var audio = new Audio('sound/voice.mp3'); 
+
+    btn.addEventListener('click', function() {
+        if (window.innerWidth >= 1024) {
+            audio.play();
+        }
+    });
+});
+</script>
+</body>
+
+</html>

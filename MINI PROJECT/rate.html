@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHIRU - Rate Us</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="icon" href="images/SHIRU LOGO.png">
+    
+    <!-- EmailJS Library -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "rFRmqLIaXEUZ7aeKW",
+            });
+        })();
+    </script>
+</head>
+<meta name="theme-color" content="#007991">
+<body>
+
+    <section id="review-section">
+        <h2>Submit Your Review</h2>
+        <form id="review-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Your name" required>
+
+            <label for="rating">Rating:</label>
+            <select id="rating" required>
+                <option value="">Select</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+            <label for="comment">Comment:</label>
+            <textarea id="comment" placeholder="Your feedback" required></textarea>
+
+            <button type="submit">Send Review</button>
+        </form>
+
+        <!-- Response Message -->
+        <div id="response-message"></div>
+    </section>
+
+    <script src="review.js"></script>
+
+</body>
+
+</html>

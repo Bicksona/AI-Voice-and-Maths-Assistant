@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+body {
+    font-family: "Lora", serif;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/background.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#review-section {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+}
+
+#review-section h2 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: "Lora", serif;
+    margin-bottom: 20px;
+    font-size: 46px;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    font-weight: bold;
+    font-size: 14px;
+    color: white;
+    font-family: "Lora", serif;
+    font-size: 20px;
+}
+
+form input[type="text"],
+form select,
+form textarea {
+    padding: 10px;
+    font-size: 15px;
+    font-family: "Lora", serif;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+form input[type="text"]:focus,
+form select:focus,
+form textarea:focus {
+    font-family: "Lora", serif;
+    border-color: white;
+}
+
+form textarea {
+    resize: none;
+    height: 80px;
+}
+
+
+form button {
+    background-color: #000000;
+    color: white;
+    font-size: 26px;
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    border: 3px solid #fff;
+    cursor: pointer;
+    font-family: "Lora", serif;
+    transition: background 0.3s, color 0.3s;
+}
+
+form button:hover {
+    background-color: white;
+    color: black;
+}
+
+
+#response-message {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+.success-message {
+    color: #28a745;
+    background-color: rgba(40, 167, 69, 0.2);
+    border: 2px solid #28a745;
+}
+
+
+.error-message {
+    color: #dc3545;
+    background-color: rgba(220, 53, 69, 0.2);
+    border: 2px solid #dc3545;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        overflow: hidden;
+    }
+}
