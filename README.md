@@ -1,38 +1,27 @@
-AI Voice and Maths Assistant
-Shiru is a smart assistant that combines voice interaction and math problem-solving capabilities.
-
-🧠 About
 Shiru is a smart assistant that combines voice interaction and math problem-solving capabilities.
 
 🚀 Features
 Voice Interaction: Engage in conversations with Shiru using natural language.
-
 Math Problem Solving: Solve mathematical problems through voice commands.
-
 User-Friendly Interface: Intuitive design for seamless user experience.
+
 
 🛠️ Technologies Used
 JavaScript: Core programming language.
-
 HTML/CSS: Frontend structure and styling.
+
 
 📦 Installation
 Clone the repository:
 
-bash
-Copy
-Edit
 git clone https://github.com/Bicksona/AI-Voice-and-Maths-Assistant.git
+
 Navigate to the project directory:
 
-bash
-Copy
-Edit
 cd AI-Voice-and-Maths-Assistant
+
 Open the application:
-
 Open index.html in your preferred web browser.
-
 📄 License
 This project is licensed under the MIT License.
 
@@ -40,5 +29,6 @@ This project is licensed under the MIT License.
 Contributions are welcome! Please fork the repository and submit a pull request for any enhancements or bug fixes.
 
 📫 Contact
-For any inquiries or feedback, please reach out via the repository's issues page.
+For any inquiries or feedback, please reach out via the repository’s issues page.
 
+© 2025 AI Voice and Maths Assistant by Bicksona
